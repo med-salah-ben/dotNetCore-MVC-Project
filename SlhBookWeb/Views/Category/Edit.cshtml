@@ -2,11 +2,11 @@
 
 @*--- Comment : Create a form with POST method ---*@
 
-<form method="post">
+<form method="post" asp-action="Edit">
 
 	<div class="p-3 border mt-4">
 		<div class="row pb-2">
-			<h2 class="text-primary">Create Category</h2>
+			<h2 class="text-primary">Edit Category</h2>
 			<hr />
 		</div>
 		<div class="mb-3">
@@ -26,7 +26,7 @@
 			@*--- Comment : send err if not validate ---*@
 			<span class="text-danger" asp-validation-for="DisplayOrder" ></span>
 		</div>
-		<button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+		<button type="submit" class="btn btn-primary" style="width:150px">Update</button>
 		<a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">
 			Back To List
 		</a>
